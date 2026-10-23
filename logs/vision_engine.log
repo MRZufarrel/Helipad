@@ -1,0 +1,127 @@
+2026-10-19T14:35:45+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-19T14:35:45+0700 | INFO     | __main__             | Starting synthetic dataset generation...
+2026-10-19T14:35:45+0700 | INFO     | __main__             | Generating 200 synthetic images for split 'train'...
+2026-10-19T14:36:05+0700 | INFO     | __main__             | Generating 40 synthetic images for split 'val'...
+2026-10-19T14:36:09+0700 | INFO     | __main__             | Generating 20 synthetic images for split 'test'...
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Synthetic dataset generation complete.
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Validating dataset structure at C:\Users\Farrel\Downloads\Helli pad\datasets\helipad
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Split 'train': 200 images, labels dir OK.
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Split 'val': 40 images, labels dir OK.
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Split 'test': 20 images, labels dir OK.
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Dataset structure validation passed.
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Generated data.yaml at C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T14:36:11+0700 | INFO     | __main__             | Dataset ready. data.yaml: C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T14:36:46+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-19T14:36:56+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-19T20:29:45+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-19T20:29:45+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T20:29:45+0700 | INFO     | __main__             | CARGO DRONE HELIPAD VISION ENGINE — PIPELINE START
+2026-10-19T20:29:45+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T20:29:45+0700 | INFO     | __main__             | [STEP 1/5] Dataset Setup
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Starting synthetic dataset generation...
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Split 'train' already has 200 images — skipping synthesis.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Split 'val' already has 40 images — skipping synthesis.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Split 'test' already has 20 images — skipping synthesis.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Synthetic dataset generation complete.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Validating dataset structure at C:\Users\Farrel\Downloads\Helli pad\datasets\helipad
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Split 'train': 200 images, labels dir OK.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Split 'val': 40 images, labels dir OK.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Split 'test': 20 images, labels dir OK.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Dataset structure validation passed.
+2026-10-19T20:29:45+0700 | INFO     | core_ai.dataset_setup | Generated data.yaml at C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T20:29:45+0700 | INFO     | __main__             |   data.yaml: C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T20:29:45+0700 | INFO     | __main__             | [STEP 2/5] Training
+2026-10-19T20:29:52+0700 | WARNING  | core_ai.train        | Pre-trained weights 'yolov8n.pt' not found locally — Ultralytics will attempt auto-download.
+2026-10-19T20:29:55+0700 | INFO     | core_ai.train        | Pre-trained model loaded: yolov8n.pt
+2026-10-19T20:29:55+0700 | INFO     | core_ai.train        | Starting training: epochs=50, imgsz=640, batch=16, optimizer=AdamW
+2026-10-19T20:35:10+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-19T20:35:10+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T20:35:10+0700 | INFO     | __main__             | CARGO DRONE HELIPAD VISION ENGINE — PIPELINE START
+2026-10-19T20:35:10+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T20:35:10+0700 | INFO     | __main__             | [STEP 1/5] Dataset Setup
+2026-10-19T20:35:10+0700 | INFO     | core_ai.dataset_setup | Starting synthetic dataset generation...
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Split 'train' already has 200 images — skipping synthesis.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Split 'val' already has 40 images — skipping synthesis.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Split 'test' already has 20 images — skipping synthesis.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Synthetic dataset generation complete.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Validating dataset structure at C:\Users\Farrel\Downloads\Helli pad\datasets\helipad
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Split 'train': 200 images, labels dir OK.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Split 'val': 40 images, labels dir OK.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Split 'test': 20 images, labels dir OK.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Dataset structure validation passed.
+2026-10-19T20:35:11+0700 | INFO     | core_ai.dataset_setup | Generated data.yaml at C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T20:35:11+0700 | INFO     | __main__             |   data.yaml: C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T20:35:11+0700 | INFO     | __main__             | [STEP 2/5] Training
+2026-10-19T20:35:16+0700 | INFO     | core_ai.train        | Pre-trained model loaded: yolov8n.pt
+2026-10-19T20:35:16+0700 | INFO     | core_ai.train        | Starting training: epochs=15, imgsz=640, batch=16, optimizer=AdamW
+2026-10-19T21:34:07+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-19T21:34:07+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T21:34:07+0700 | INFO     | __main__             | CARGO DRONE HELIPAD VISION ENGINE — PIPELINE START
+2026-10-19T21:34:07+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T21:34:07+0700 | INFO     | __main__             | [STEP 1/5] Dataset Setup
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Starting synthetic dataset generation...
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Split 'train' already has 200 images — skipping synthesis.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Split 'val' already has 40 images — skipping synthesis.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Split 'test' already has 20 images — skipping synthesis.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Synthetic dataset generation complete.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Validating dataset structure at C:\Users\Farrel\Downloads\Helli pad\datasets\helipad
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Split 'train': 200 images, labels dir OK.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Split 'val': 40 images, labels dir OK.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Split 'test': 20 images, labels dir OK.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Dataset structure validation passed.
+2026-10-19T21:34:07+0700 | INFO     | core_ai.dataset_setup | Generated data.yaml at C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T21:34:07+0700 | INFO     | __main__             |   data.yaml: C:\Users\Farrel\Downloads\Helli pad\config\data.yaml
+2026-10-19T21:34:07+0700 | INFO     | __main__             | [STEP 2/5] Training — SKIPPED by user
+2026-10-19T21:34:07+0700 | INFO     | __main__             | [STEP 3/5] Detection Demo
+2026-10-19T21:34:15+0700 | INFO     | core_ai.detector     | Model loaded on CPU (fallback).
+2026-10-19T21:34:21+0700 | INFO     | __main__             |   Detections: 1, Latency: 5998.73 ms
+2026-10-19T21:34:21+0700 | INFO     | __main__             |   Annotated output: C:\Users\Farrel\Downloads\Helli pad\logs\pipeline_detection_demo.jpg
+2026-10-19T21:34:21+0700 | INFO     | __main__             | [STEP 4/5] Evaluation
+2026-10-19T21:34:21+0700 | INFO     | core_ai.evaluator    | Evaluator model loaded on CPU.
+2026-10-19T21:34:21+0700 | INFO     | core_ai.evaluator    | Running Ultralytics validation on test split (data=C:\Users\Farrel\Downloads\Helli pad\config\data.yaml)...
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    | === Validation Metrics ===
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    |   precision   : 0.9975
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    |   recall      : 1.0000
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    |   map50       : 0.9950
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    |   map50_95    : 0.9950
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    |   fitness     : 0.9950
+2026-10-19T21:34:30+0700 | INFO     | core_ai.evaluator    | Profiling latency on 20 test images (target < 200 ms)...
+2026-10-19T21:34:34+0700 | INFO     | core_ai.evaluator    | === Latency Profiling (ms) ===
+2026-10-19T21:34:34+0700 | INFO     | core_ai.evaluator    |   Pre-processing  mean: 4.80  median: 4.76
+2026-10-19T21:34:34+0700 | INFO     | core_ai.evaluator    |   Inference        mean: 177.42  median: 173.91
+2026-10-19T21:34:34+0700 | INFO     | core_ai.evaluator    |   Post-processing  mean: 2.23  median: 2.11
+2026-10-19T21:34:34+0700 | INFO     | core_ai.evaluator    |   Total            mean: 184.45  median: 182.23
+2026-10-19T21:34:34+0700 | INFO     | core_ai.evaluator    |   Target: < 200 ms  |  Compliant: True
+2026-10-19T21:34:34+0700 | INFO     | __main__             |   Evaluation complete.
+2026-10-19T21:34:34+0700 | INFO     | __main__             | [STEP 5/5] Robustness Testing
+2026-10-19T21:34:34+0700 | INFO     | core_ai.detector     | Model loaded on CPU (fallback).
+2026-10-19T21:34:34+0700 | INFO     | core_ai.robustness   | Robustness testing on 20 images across 5 conditions...
+2026-10-19T21:34:34+0700 | INFO     | core_ai.robustness   |   Condition: baseline (20 images)
+2026-10-19T21:34:38+0700 | INFO     | core_ai.robustness   |   Condition: dim_lighting (20 images)
+2026-10-19T21:34:42+0700 | INFO     | core_ai.robustness   |   Condition: glare_overexposure (20 images)
+2026-10-19T21:34:46+0700 | INFO     | core_ai.robustness   |   Condition: perspective_rotation (20 images)
+2026-10-19T21:34:50+0700 | INFO     | core_ai.robustness   |   Condition: motion_blur (20 images)
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ======================================================================
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ROBUSTNESS TEST SUMMARY
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ======================================================================
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | Condition                 | Det.Rate |  Mean Conf | Latency(ms) |   Images
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ----------------------------------------------------------------------
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | baseline                  |    100.0% |     0.9805 |     198.38 |       20
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | dim_lighting              |    100.0% |     0.9768 |     188.34 |       20
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | glare_overexposure        |     70.0% |     0.9764 |     184.20 |       20
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | perspective_rotation      |    100.0% |     0.9550 |     180.94 |       20
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | motion_blur               |    100.0% |     0.9784 |     193.31 |       20
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ======================================================================
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ANALYSIS OF LIMITATIONS:
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   |   [MINOR] dim_lighting              — detection rate drop: 0.0%, confidence drop: 0.0037
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   |   [SEVERE] glare_overexposure        — detection rate drop: 30.0%, confidence drop: 0.0040
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   |   [MINOR] perspective_rotation      — detection rate drop: 0.0%, confidence drop: 0.0255
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   |   [MINOR] motion_blur               — detection rate drop: 0.0%, confidence drop: 0.0021
+2026-10-19T21:34:54+0700 | INFO     | core_ai.robustness   | ======================================================================
+2026-10-19T21:34:54+0700 | INFO     | __main__             | ======================================================================
+2026-10-19T21:34:54+0700 | INFO     | __main__             | PIPELINE COMPLETE
+2026-10-19T21:34:54+0700 | INFO     | __main__             | ======================================================================
+2026-10-23T19:30:08+0700 | INFO     | config.config        | Logging initialised — level=INFO, file=C:\Users\Farrel\Downloads\Helli pad\logs\vision_engine.log
+2026-10-23T19:30:14+0700 | WARNING  | __main__             | Pre-trained weights 'yolov8n.pt' not found locally — Ultralytics will attempt auto-download.
+2026-10-23T19:30:24+0700 | INFO     | __main__             | Pre-trained model loaded: yolov8n.pt
+2026-10-23T19:30:24+0700 | INFO     | __main__             | Starting training: epochs=15, imgsz=640, batch=16, optimizer=AdamW

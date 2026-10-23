@@ -1,0 +1,12 @@
+# Core dependencies
+numpy>=1.24.0
+opencv-python>=4.8.0
+PyYAML>=6.0
+
+# YOLOv8 / Ultralytics
+ultralytics>=8.1.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Logging / utilities (standard library covers logging, but for structured output)
+python-dotenv>=1.0.0

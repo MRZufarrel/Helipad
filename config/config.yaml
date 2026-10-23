@@ -1,0 +1,91 @@
+# ==============================================================================
+# config.yaml — Central Configuration for Cargo Drone Helipad Vision Engine
+# All magic numbers, thresholds, paths, and hyperparameters live here.
+# ==============================================================================
+
+# --- Dataset Configuration ---
+dataset:
+  root_dir: "datasets/helipad"
+  train_subdir: "train"
+  val_subdir: "val"
+  test_subdir: "test"
+  images_folder: "images"
+  labels_folder: "labels"
+  num_classes: 1
+  class_names:
+    - "helipad"
+  data_yaml_path: "config/data.yaml"
+  # Synthetic generator
+  synthetic:
+    num_train: 200
+    num_val: 40
+    num_test: 20
+    image_size: 640
+    helipad_min_size_ratio: 0.15
+    helipad_max_size_ratio: 0.45
+
+# --- Model Configuration ---
+model:
+  pretrained_weights: "yolov8n.pt"
+  # Ultralytics writes to <project_name>/<task>/<experiment_name>/weights/
+  best_weights_path: "runs/detect/detect/helipad_train/weights/best.pt"
+  last_weights_path: "runs/detect/detect/helipad_train/weights/last.pt"
+  device_fallback: "cpu"
+  device_preferred: "cuda"
+  confidence_threshold: 0.65
+  iou_threshold: 0.45
+
+# --- Training Hyperparameters ---
+training:
+  epochs: 15
+  image_size: 640
+  batch_size: 16
+  patience: 10
+  optimizer: "AdamW"
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  momentum: 0.937
+  warmup_epochs: 3
+  cos_lr: true
+  project_name: "runs/detect"
+  # Ultralytics appends the task ("detect") to `project`, so the resolved
+  # run directory is <project_name>/<task>/<experiment_name>.
+  run_task: "detect"
+  experiment_name: "helipad_train"
+
+# --- Inference / Detection ---
+inference:
+  default_altitude_m: 10.0
+  default_fov_x_deg: 62.2
+  default_fov_y_deg: 48.8
+  target_latency_ms: 200
+
+# --- Evaluation ---
+evaluation:
+  conf_threshold: 0.001
+  iou_threshold: 0.6
+  max_det: 300
+
+# --- Robustness Testing ---
+robustness:
+  dim_brightness_factor: 0.3
+  glare_brightness_factor: 1.7
+  rotation_min_deg: 15
+  rotation_max_deg: 45
+  blur_kernel_size: 15
+  blur_sigma: 0.0
+
+# --- Logging ---
+logging:
+  log_dir: "logs"
+  log_level: "INFO"
+  log_format: "%(asctime)s | %(levelname)-8s | %(name)-20s | %(message)s"
+  date_format: "%Y-%m-%dT%H:%M:%S%z"
+  log_file: "logs/vision_engine.log"
+
+# --- Database ---
+database:
+  db_path: "logs/telemetry_vision.db"
+  db_timeout_s: 5
+  db_retry_count: 3
+  db_retry_delay_s: 0.1
